@@ -5,8 +5,8 @@ public class Carro {
 
 
     public Carro(String marca, String modelo, int ano){
-        this.modelo = modelo;
         this.marca = marca;
+        this.modelo = modelo;
         this.ano = ano;
     }
 
@@ -23,4 +23,13 @@ public class Carro {
     }
 
 
+    public void Exibir(){
+        System.out.println("marca: " + marca);
+        System.out.println("modelo: " + modelo);
+        System.out.println("ano: " + ano);
+    }
+
+    public int idadeDoCarro(){
+        return 2026 - ano;
+    }
 }
