@@ -6,11 +6,11 @@ public class Carro {
 
 
 
-//    public Carro(String marca, String modelo, int ano){
-//        this.marca = marca;
-//        this.modelo = modelo;
-//        this.ano = ano;
-//    }
+    public Carro(String marca, String modelo, int ano){
+        this.marca = marca;
+        this.modelo = modelo;
+        this.ano = ano;
+    }
 
     public void setMarca(String marca) {
         this.marca = marca;
