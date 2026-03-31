@@ -1,13 +1,31 @@
 public class Carro {
-    String marca;
-    String modelo;
-    int ano;
+    private String marca;
+    private String modelo;
+    private int ano;
 
 
-    public Carro(String marca, String modelo, int ano){
+
+
+//    public Carro(String marca, String modelo, int ano){
+//        this.marca = marca;
+//        this.modelo = modelo;
+//        this.ano = ano;
+//    }
+
+    public void setMarca(String marca) {
         this.marca = marca;
+    }
+
+    public void setModelo(String modelo) {
         this.modelo = modelo;
-        this.ano = ano;
+    }
+
+    public void setAno(int ano) {
+        if (ano < 1886 || ano > 2026){
+            System.out.println("Erro!!");
+        }else {
+            this.ano = ano;
+        }
     }
 
     public String getMarca(){

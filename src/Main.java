@@ -1,30 +1,15 @@
-import java.util.ArrayList;
+//import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<Carro> listaCarro = new ArrayList<>();
+//        ArrayList<Carro> listaCarro = new ArrayList<>();
+
+        Carro c1 = new Carro();
+        c1.setMarca("Volkswagen");
+        c1.setModelo("T-cross");
+        c1.setAno(2024);
 
 
-        Carro carro1 = new Carro("tuffCars", "67", 2025);
-        listaCarro.add(carro1);
-        Carro carro2 = new Carro("tuffCars", "61", 2025);
-        listaCarro.add(carro2);
-        Carro carro3 = new Carro("tuffCars", "41", 2025);
-        listaCarro.add(carro3);
-
-
-        for(Carro c : listaCarro){
-            c.Exibir();
-        }
-
-
-
-
-//        carro1.Exibir(); // esse metodo retorna valor
-//        int idade = carro1.idadeDoCarro(); // esse metodo executa uma ação
-//        System.out.println("idade do carro: " + idade);
-
-
-
+        System.out.println("marca do carro: " + c1.getMarca() + "\n modelo do carro: " + c1.getModelo() + "\n ano de carro: " + c1.getAno());
     }
 }
