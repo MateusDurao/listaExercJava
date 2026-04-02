@@ -4,12 +4,14 @@ public class Carro {
     private int ano;
 
 
-
-
     public Carro(String marca, String modelo, int ano){
         this.marca = marca;
         this.modelo = modelo;
         this.ano = ano;
+    }
+
+    public Carro(){
+        this("Desconhecido", "Desconhecido", 0);
     }
 
     public void setMarca(String marca) {
