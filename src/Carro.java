@@ -2,16 +2,22 @@ public class Carro {
     private String marca;
     private String modelo;
     private int ano;
+    private static int totalCarros = 0;
 
+    public void incrementTotalCarros(){
+        totalCarros++;
+    }
 
     public Carro(String marca, String modelo, int ano){
         this.marca = marca;
         this.modelo = modelo;
         this.ano = ano;
+        incrementTotalCarros();
     }
 
     public Carro(){
         this("Desconhecido", "Desconhecido", 0);
+        incrementTotalCarros();
     }
 
     public void setMarca(String marca) {
@@ -42,6 +48,9 @@ public class Carro {
         return ano;
     }
 
+    public static int getTotalCarros() {
+        return totalCarros;
+    }
 
     public void Exibir(){
         System.out.println("marca: " + marca);

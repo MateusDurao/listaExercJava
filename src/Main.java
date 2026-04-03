@@ -8,15 +8,21 @@ public class Main {
 //        Scanner sc = new Scanner(System.in);
 
         Carro c1 = new Carro("VW", "gol", 2026);
+        Carro c2 = new Carro("toyota", "rav4", 2025);
+        Carro c3 = new Carro("genesis", "g80", 2025);
+        Carro c4 = new Carro("ferrari", "sf90", 2022);
+        Carro c5 = new Carro("skoda", "octavia", 2010);
 
-        Carro carro = new Carro();
 
+        System.out.println(Carro.getTotalCarros());
 
-        System.out.println("marca do carro: " + c1.getMarca() + "\nmodelo do carro: " + c1.getModelo() + "\nano de carro: " + c1.getAno());
-        System.out.println("marca do carro: " + carro.getMarca() + "\nmodelo do carro: " + carro.getModelo() + "\nano de carro: " + carro.getAno());
+        //acessando Carro.totalCarros a gente acessa o valor do atributo que
+        //não esta associado a mais nenhum objeto, a gente pega um valor que esta
+        //associado a classe, e nao a um objeto
 
-        //o primeiro carro nasce com valores específicos e válidos definidos na hora da instanciação
-        // ja o outro carro nasce com os valores ja pre definidos pelo metodo construtor sem parametros
+        //atributos static pertencem a classe e são compartilhados por todos os
+        //objetos, ja os atributos de instância pertencem a cada objeto
+        //de forma individual
 
 
     }
