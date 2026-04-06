@@ -8,6 +8,15 @@ public class Carro {
         totalCarros++;
     }
 
+    public static final int ANO_PRIMEIRO_CARRO = 1886;
+
+    public void setAno(int ano) {
+        int anoAtual = java.time.Year.now().getValue();
+
+        if (ano < ANO_PRIMEIRO_CARRO || ano > anoAtual) {
+            System.out.println("Ano Inválido! Deve estar entre " + ANO_PRIMEIRO_CARRO + " e " + anoAtual);
+        }
+    }
     public Carro(String marca, String modelo, int ano){
         this.marca = marca;
         this.modelo = modelo;
@@ -30,14 +39,6 @@ public class Carro {
 
     public void setModelo(String modelo) {
         this.modelo = modelo;
-    }
-
-    public void setAno(int ano) {
-        if (ano < 1886 || ano > 2026){
-            System.out.println("Erro!!");
-        }else {
-            this.ano = ano;
-        }
     }
 
     public String getMarca(){
