@@ -14,16 +14,10 @@ public class Main {
         Carro c5 = new Carro("skoda", "octavia", 2010);
 
 
-        System.out.println(Carro.getTotalCarros());
+        Carro.imprimirTotal();
 
-        //acessando Carro.totalCarros a gente acessa o valor do atributo que
-        //não esta associado a mais nenhum objeto, a gente pega um valor que esta
-        //associado a classe, e nao a um objeto
-
-        //atributos static pertencem a classe e são compartilhados por todos os
-        //objetos, ja os atributos de instância pertencem a cada objeto
-        //de forma individual
-
+        //Um metodo static não consegue acessar um atributo de instância
+        // diretamente porque eles operam em contextos de memória diferentes.
 
     }
 }

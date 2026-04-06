@@ -20,6 +20,10 @@ public class Carro {
         incrementTotalCarros();
     }
 
+    public static void imprimirTotal() {
+        System.out.println("Total de carros criados: " + totalCarros);
+    }
+
     public void setMarca(String marca) {
         this.marca = marca;
     }
