@@ -6,15 +6,15 @@ public class Main {
     public static void main(String[] args) {
 //        ArrayList<Carro> listaCarro = new ArrayList<>();
 //        Scanner sc = new Scanner(System.in);
-        int x;
+        int a = 10;
+        int b = a; // b recebe uma cópia do valor de a
+        b = 99;
 
-        if (true){
-            x = 10;
-        }
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
 
-        System.out.println(x);
-
-        //o codigo dava erro pois o x so existia dentro do if, nao era "visto" pelo resto do codigo
+        //a) a = 10 / b = 99
+        //b) nao, pois a sempre vai ter um valor fixo
 
     }
 }
