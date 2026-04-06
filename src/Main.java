@@ -6,18 +6,15 @@ public class Main {
     public static void main(String[] args) {
 //        ArrayList<Carro> listaCarro = new ArrayList<>();
 //        Scanner sc = new Scanner(System.in);
+        int x;
 
-        Carro c1 = new Carro("VW", "gol", 2026);
-        Carro c2 = new Carro("toyota", "rav4", 2025);
-        Carro c3 = new Carro("genesis", "g80", 2025);
-        Carro c4 = new Carro("ferrari", "sf90", 2022);
-        Carro c5 = new Carro("skoda", "octavia", 2010);
+        if (true){
+            x = 10;
+        }
 
+        System.out.println(x);
 
-        Carro.imprimirTotal();
-
-        //Um metodo static não consegue acessar um atributo de instância
-        // diretamente porque eles operam em contextos de memória diferentes.
+        //o codigo dava erro pois o x so existia dentro do if, nao era "visto" pelo resto do codigo
 
     }
 }
